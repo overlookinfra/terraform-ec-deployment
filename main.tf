@@ -8,6 +8,8 @@ data "ec_stack" "latest" {
 
 # Create an Elastic Cloud deployment
 resource "ec_deployment" "ecproject" {
+  name = var.name
+
   # Mandatory fields
   region                 = var.ec_region
   version                = var.ec_stack_version == "" ? data.ec_stack.latest.version : var.ec_stack_version
