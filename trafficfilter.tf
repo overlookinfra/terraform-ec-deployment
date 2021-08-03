@@ -1,5 +1,5 @@
 resource "ec_deployment_traffic_filter" "gcp_vpc_nat" {
-  name   = "${var.project}_filter"
+  name   = "${var.name}_filter"
   region = var.ec_region
   type   = "ip"
 
