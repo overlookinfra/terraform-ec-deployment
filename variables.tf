@@ -29,3 +29,9 @@ variable "ec_stack_version" {
   type        = string
   default     = ""
 }
+
+variable "name" {
+  description = "Name of resources"
+  type        = string
+  default     = "ecproject"
+}
